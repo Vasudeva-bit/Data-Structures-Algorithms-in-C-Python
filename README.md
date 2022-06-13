@@ -1,3 +1,2 @@
-# Data Structures Implementations in C++ and Python
-This repository contains practical code implementations of various Data Structures such as Singly Linked List, Doubly Linked List, Binary Trees, Graphs, Amortized analysis for Dynamic arrays, Stacks, Queues, and many more. Every day, more and more Data Structures' Implementations are being added. 
-Keep in touch with this repository.
+# Data Structures & Algorithms in C++ and Python
+This repository contains practical code implementations of various Data Structures such as Singly Linked List, Doubly Linked List, Binary Trees, Graphs, Amortized analysis for Dynamic arrays, Stacks, Queues, and Algorithms such as Bell Fort Algorithm, Kruskal Algorithm, Prims Algorithm etc. Every day, more and more Data Structures' Implementations and Algorithms are being added.
