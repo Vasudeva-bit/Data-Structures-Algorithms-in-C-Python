@@ -27,13 +27,24 @@ int memo(string str, vector<string>& vectr, unordered_map<string, int>& dp) {
     }
     return dp[str] = out;
 }
-int tab(int n, vector<int>& vectr) {
-    
+int tab(string str, vector<string>& vectr) {
+    int n = str.size();
+    vector<int> dp(n+1, 0);
+    dp[0] = 1;
+    for(int i=1;i<=n;i++) {
+        for(auto ele: vectr) {
+            if(ele[0] == str[i-1]) {
+                dp[i+ele.size()-1] += dp[i-1];
+            }
+        }
+    }
+    return dp[n];
 }
 int main() {
     string src = "abcdef";
     vector<string> opts = {"ab", "abc", "def", "abcd", "c", "ef"};
     unordered_map<string, int> dp;
     cout<<"Memo: "<<memo(src, opts, dp)<<endl;
-    cout<<"Recursive: "<<recursive(src, opts);
+    cout<<"Recursive: "<<recursive(src, opts)<<endl;
+    cout<<"Tabulation: "<<tab(src, opts);
 }
